@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    .my-nav{
+    background-color: rgb(27, 48, 44);
+    border-bottom: solid 5px rgb(0, 212, 184);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav-fnt{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    color: snow;
+    text-align: right;
+    padding-right: 0px;
+    display: flex;
+}
+
+.part-1{
+    text-align: center; padding-top: 300px; height: 100%; background-color: rgb(13, 19, 24);
+}
+
+.main-heading{
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+.mybtn{
+    color: white;
+    background-color: transparent;
+    border: solid white 4px;
+    font-size: x-large;
+    
+  }
+
+.pic1{
+    height: auto;
+    width: 400px;
+  }
+ 
+.font1{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 40px;
+    font-size: large;
+    align-content: center;
+  }
+    <style>
+        body, html{
+          height: 100%;
+          background-color: white;
+        } 
+           
+     </style>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+
+    <!--Navbar...........-->
+
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+            <div style="padding: 10px;">
+            <span class="text-muted" style="text-align: left;">Welcome to My Blog brand.</span>
+            </div>
+            <div>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            </div>
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/gallery">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about">About Blogger</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/contact">Contact Us</a>
+              </li>
+            </ul>
+          
+        </div>
+    </div>
+    <nav class="navbar navbar-dark my-nav">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="mx-auto">
+          <h3 class="nav-fnt">About</h3>
+        </div>
+        </div>
+    </nav>
+    
+   
+    <div class="container-fluid part-1">
+      <h2 class="main-heading">Hello, I'm <span style="color: rgb(255, 0, 43);">Arth Patel</span>.</h2>
+      <h2 class="main-heading">I'm Python Developer</h2>
+      <div style="padding-top: 20px;">
+        <button class="mybtn" onclick="document.getElementById('mid1').scrollIntoView();">print("<span
+            style="color: yellowgreen;">View My Work</span>")</button>
+      </div>
+    </div>
+      
+      
+      <div class="container" id="mid1" style="background-color: white; height: auto;">
+        <div class="row">
+          <h2 style="text-align: center; padding: 15px; font-family: monospace;">Skills:</h2>
+          <div class="col-lg-6">
+            <img class="pic1" src="{% static 'blog/about_pic1.jpg' %}">
+          </div>
+          <div class="col-lg-6 font1">
+            <ul>
+              <li> Django</li><br>
+              <li> APIs</li><br>
+              <li> SQL</li><br>
+              <li> PostgreSQL</li><br>
+              <li> Web Scraping</li><br>
+              <li> Data Visulization</li><br>
+              <li> Data Science</li><br>
+              <li> Skitlearn</li><br>
+              <li> Bot</li><br>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container" id="mid2" style="background-color: rgb(255, 255, 255); height: auto; padding-top: 40px;">
+        <div class="row"> 
+          <div class="col-lg-6 font1">
+            <p>
+              I develope fully responsive wbsite using <span style="color: tomato;">Django</span>, <span style="color: rgb(46, 231, 0);">Html</span>, <span style="color: rgb(17, 0, 167);">CSS</span>, <span style="color: rgb(155, 0, 121);">JavaScript</span> and <span style="color: rgb(255, 0, 0);">SQL</span> database.
+            </p>
+            <p>
+              Now, let's talk about Machine Learning: I am working with Pandas, Numpy, Matplotlib and SKlearn, and i use <span style="color:rgb(46, 231, 0)">Jupyter Notebook</span> for Machine Learning.
+            </p>
+            <p>
+              I have also developed E-commerce website <span style="color: rgb(255, 0, 43);">Shopping-Bazzar</span>
+                <br>  Link: <a href="www.abpatel.herokuapp.com" style="color: blue; font-size: x-large;">www.abpatel.herokuapp.com</a>
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <img class="pic1" style="margin-left: 100px;" src="{% static 'blog/about_pic2.jpg' %}">
+          </div>
+        </div>
+      </div>
+
+
+  </body>
+</html>
